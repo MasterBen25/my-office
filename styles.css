@@ -1,0 +1,309 @@
+/*------ 01 - RESET CSS -------*/
+/*------ 02 - GLOBAL CSS ------*/
+/*------ 03 - CUSTOM CSS ------*/
+/*------ 04 - RESPONSIVE ------*/
+
+@font-face {
+    font-family: 'ComfortaaRegular';
+    src: url('fonts/ComfortaaRegular.eot');
+    src: url('fonts/ComfortaaRegular.eot') format('embedded-opentype'),
+         url('fonts/ComfortaaRegular.woff2') format('woff2'),
+         url('fonts/ComfortaaRegular.woff') format('woff'),
+         url('fonts/ComfortaaRegular.ttf') format('truetype'),
+         url('fonts/ComfortaaRegular.svg#ComfortaaRegular') format('svg');
+}
+
+/*--------RESET CSS -----------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+  font-size: 1em;
+	font-family: verdana, helvetica, sans-serif;
+}
+
+/*-------GLOBAL CSS---------*/
+
+body {
+  background-color: #f7f7f7;
+}
+.wrapper {
+  width: 100%;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+h1 {
+  font-family: 'ComfortaaRegular';
+  font-size: 3.8rem;
+  padding: 175px 0 15px 0;
+}
+h2 {
+  font-family: 'ComfortaaRegular';
+  font-size: 2.9rem;
+}
+p {
+  line-height: 1.8rem;
+}
+button {
+  cursor: pointer;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.8);
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: #F04828;
+}
+/*-------CUSTOM CSS---------*/
+
+
+/*--header--*/
+
+
+#main-nav .wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#main-nav {
+  padding: 20px 0 15px 0;
+}
+#main-nav ul {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+#main-nav a {
+  margin: 0 20px;
+  text-decoration: none;
+  font-family: 'ComfortaaRegular';
+  font-size: 1.5rem;
+  color: #000;
+}
+#main-nav a:hover {
+  color: #F04828;
+}
+#logo a{
+  font-family: 'ComfortaaRegular';
+  font-size: 3rem;
+  text-decoration: none;
+}
+#logo a:hover {
+  color: #F04828;
+}
+
+/*--home--*/
+
+#home {
+  min-height: 500px;
+  background-image: url(../images/blur-office01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#home h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+#home p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+#home p{
+  font-size: 1.5rem;
+  padding-bottom: 80px;
+}
+#home button {
+  display: flex;
+  margin: 0 auto;
+  transition: all 0.2s ease-in-out;
+}
+#home button:hover {
+  transform: scale(1.2);
+}
+
+/*--presentation--*/
+
+#presentation h2 {
+  text-align: center;
+}
+#presentation h3 {
+  text-align: center;
+}
+#presentation h2 {
+  font-family: 'ComfortaaRegular';
+  font-size: 2.9rem;
+  margin-top: 50px;
+}
+#presentation h3 {
+  font-size: 1.3rem;
+  margin-top: 10px;
+}
+#a3col {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px 0 20px 0;
+}
+.col {
+  margin: 0 20px;
+  overflow: hidden;
+  height: 250px;
+}
+.col img {
+  border-radius: 10px;
+  transition: all 0.2s linear;
+}
+.col p {
+  position: relative;
+  bottom: -10px;
+  transition: all 0.2s linear;
+  color: #000;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  text-align: center;
+}
+.col:hover p {
+  position: relative;
+  bottom: 150px;
+}
+.col:hover img {
+  opacity: 0.2;
+}
+#text-present {
+  margin: 10px 80px 30px 80px;
+  font-size: 1.2rem;
+}
+
+/*--punchline--*/
+
+#punchline {
+  background-image: url(../images/bannerwork.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+#punchline p {
+  padding: 80px 0;
+  font-size: 2.5rem;
+  font-family: 'ComfortaaRegular';
+}
+
+/*--offres--*/
+
+#offres h2 {
+  text-align: center;
+}
+#a2col {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.col2 {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 40px 30px;
+  padding: 10px 15px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+.col2 h3 {
+  font-family: 'ComfortaaRegular';
+  font-size: 3rem;
+  margin: 20px 0;
+}
+.col2 img {
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.col2 p {
+  font-size: 1.5rem;
+}
+.col2 button {
+  margin: 20px 0;
+  transition: all 0.2s ease-in-out;
+}
+.col2 button:hover {
+  transform: scale(1.2);
+}
+
+/*-------RESPONSIVE---------*/
+
+@media screen and (max-width:790px) {
+  #home {
+    padding:0 10px;
+  }
+  #main-nav ul {
+    flex-wrap: wrap;
+  }
+  #logo a {
+    white-space: nowrap;
+  }
+}
+@media screen and (max-width:632px) {
+  #main-nav .wrapper {
+    flex-wrap: wrap;
+  }
+  #main-nav ul {
+    margin: 20px auto 0 auto;
+  }
+}
+@media screen and (max-width:443px) {
+  #main-nav {
+    padding-bottom: 0;
+  }
+  #main-nav li {
+    margin-bottom: 15px;
+  }
+}
